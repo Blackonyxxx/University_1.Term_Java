@@ -1,15 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package bubblesort;
 
 import java.util.Arrays;
 
-/**
- *
- * @author arif0
- */
+
 public class Bubblesort {
 
     public static void bubblesort(int[] arr, int n ){
