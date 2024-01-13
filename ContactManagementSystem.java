@@ -47,8 +47,10 @@ public class ContactManagementSystem {
             System.out.println("Contact deleted successfully.");
             
         }
-        else
+        else{
             System.out.println("No matching entry found.");
+            delete(names,phones,mails);
+        }
 
     }
     public static void search(String[] names,String[] phones, String[] mails){
@@ -177,6 +179,7 @@ public class ContactManagementSystem {
             }
             else if (operation.equals("delete")){
                 delete(names,phones,mails);
+                addCounter--;
             }
             else if (operation.equals("update")) {
                 update(names, phones, mails);
