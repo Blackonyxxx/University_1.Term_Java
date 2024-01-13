@@ -5,7 +5,7 @@ public class ContactManagementSystem {
 
     public static void update(String[] names, String[] phones, String[] mails) {
     Scanner scn = new Scanner(System.in);
-    System.out.print("Enter a name or mail address: ");
+    System.out.print("Enter a number or mail address: ");
     String check = scn.nextLine();
     int index = indexSearch(names, phones, mails, check);
 
@@ -44,6 +44,7 @@ public class ContactManagementSystem {
             names[index]=null;
             mails[index]=null;
             phones[index]=null;
+            System.out.println("Contact deleted successfully.");
             
         }
         else
@@ -119,7 +120,7 @@ public class ContactManagementSystem {
         names[n]=name;
         phones[n]=phone;
         mails[n]=mail;
-        System.out.println("contact added");
+        System.out.println("Contact added successfully.");
     }
     public static void displayMenu(){
         System.out.println("write 'add' to add a new contact");
